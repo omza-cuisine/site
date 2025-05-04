@@ -44,6 +44,13 @@ header {
     font-size: clamp(1.5rem, 5vw, 1.8rem);
     font-weight: 700;
     color: var(--primary-color);
+    text-decoration: none; /* Enlève le soulignement du lien */
+    transition: var(--transition); /* Ajoute une transition pour l'effet hover */
+}
+
+.logo:hover {
+    color: var(--secondary-color); /* Changement de couleur au survol */
+    transform: scale(1.05); /* Légère animation au survol */
 }
 
 /* Navigation */
