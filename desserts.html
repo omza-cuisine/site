@@ -2,21 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Mon Site de Cuisine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - OmZa Cuisine</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-    <a href="index.html" class="logo">OmZa Cuisine</a>
-    <button class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav>
-        <ul class="main-menu">
+        <a href="index.html" class="logo">OmZa Cuisine</a>
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="main-menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="liste-recette.html">Liste des recettes</a></li>
                 <li class="dropdown">
@@ -36,42 +36,31 @@
     </header>
 
     <main>
-        <!-- Page d'accueil -->
-        <section class="hero">
-            <h1>Bienvenue sur le site de OmZa !</h1>
-            <p>Le site pour de bon petit plat avec une touche marocaine</p>
-            <a href="liste-recette.html" class="btn">Explorer</a>
-        </section>
-
-        <!-- Template de recette (recette.html) -->
-        <!--
-        <section class="recette-template">
-            <h2>Nom de la recette</h2>
-            <div class="recette-grid">
-                <div class="recette-photo">
-                    <img src="chemin/vers/photo.jpg" alt="Nom de la recette">
-                </div>
-                <div class="recette-ingredients">
-                    <h3>Ingrédients</h3>
-                    <ul>
-                        <li>Ingrédient 1</li>
-                        <li>Ingrédient 2</li>
-                        <li>Ingrédient 3</li>
-                    </ul>
-                </div>
-                <div class="recette-preparation">
-                    <h3>Préparation</h3>
-                    <ol>
-                        <li>Étape 1</li>
-                        <li>Étape 2</li>
-                        <li>Étape 3</li>
-                    </ol>
+        <section class="recette-template">   
+            <div class="recette-category">
+                <h2 id="saladefruit">Salade de fruit</h2>
+                <div class="recette-grid">
+                    <div class="recette-photo">
+                        <img src="images/saladefruit.jpeg" alt="saladefruit" onerror="this.src='images/logo.jpeg'">
+                    </div>
+                    <div class="recette-ingredients">
+                        <h3>Ingrédients</h3>
+                        <ul>
+                            <li>1 Pomme</li>
+                            <li>1 Orange</li>
+                            <li>500 ml de jus d'orange</li>
+                        </ul>
+                    </div>
+                    <div class="recette-preparation">
+                        <h3>Préparation</h3>
+                        <ol>
+                            <li>On melange tout</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
-        -->
     </main>
-
     <footer>
         <p>&copy; 2025 OmZa Cuisine. Tous droits réservés.</p>
         <div class="social-links">
