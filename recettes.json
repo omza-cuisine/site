@@ -3,24 +3,51 @@
         "title": "milletrous",
         "category": "Casse Croute",
         "url": "casse-croute.html#milletrous",
-        "ingredients": ["farine", "semoule fine", "levure boulangère", "levure chimique"]
+        "ingredients": [
+            "farine",
+            "semoule fine",
+            "levure boulangère",
+            "levure chimique"
+        ]
     },
     {
         "title": "douwara",
         "category": "Plats",
         "url": "plats.html#douwara",
-        "ingredients": ["Olive", "Ognion", "Tripes", "Tomates"]
+        "ingredients": [
+            "Olive",
+            "Ognion",
+            "Tripes",
+            "Tomates"
+        ]
     },
     {
         "title": "melwi",
         "category": "Casse Croute",
         "url": "casse-croute.html#melwi",
-        "ingredients": ["farine", "semoule fine"]
+        "ingredients": [
+            "farine",
+            "semoule fine"
+        ]
     },
     {
         "title": "saladefruit",
         "category": "Desserts",
         "url": "desserts.html#saladefruit",
-        "ingredients": ["Pomme", "Orange"]
+        "ingredients": [
+            "Pomme",
+            "Orange"
+        ]
+    },
+    {
+        "title": "Frites aux épices",
+        "category": "Plats",
+        "url": "plats.html#fritesauxépices",
+        "ingredients": [
+            "5 petites pomme de terre ou 2 grande",
+            "Epices: Sel, Poivre, Ail en poudre, Paprika",
+            "Maizena",
+            "Huile à frire"
+        ]
     }
 ]
