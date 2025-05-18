@@ -9,11 +9,23 @@
 </head>
 <body>
     <script>
-    fetch('https://api.countapi.xyz/hit/omza-cuisine/homepage')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('visitor-count').textContent = data.value;
-    });
+      // Remplacez ces valeurs par votre namespace et page
+      const NAMESPACE = "omza-cuisine";  // Votre identifiant (ex: nom du site)
+      const PAGE = "homepage";           // Nom de la page (ex: "recette-tarte")
+    
+      fetch(`https://counter.jdev.es/count?namespace=${NAMESPACE}&page=${PAGE}`)
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("visitor-count").textContent = data.count;
+        })
+        .catch(error => {
+          console.log("Erreur API, utilisation du compteur local...");
+          // Fallback avec localStorage
+          let localCount = localStorage.getItem('localViews') || 0;
+          localCount++;
+          localStorage.setItem('localViews', localCount);
+          document.getElementById("visitor-count").textContent = localCount;
+        });
     </script>
     <header>
     <a href="index.html" class="logo">OmZa Cuisine</a>
@@ -45,7 +57,7 @@
     <main>
         <!-- Page d'accueil -->
         <section class="hero">
-             Visites : <span id="visitor-count">0</span>
+            <p>Visites : <span id="visitor-count">⌛ Chargement...</span></p>
             <h1>Bienvenue sur le site de OmZa !</h1>
             <p>Le site pour de bon petit plat avec une touche marocaine</p>
             <a href="liste-recette.html" class="btn">Explorer</a>
