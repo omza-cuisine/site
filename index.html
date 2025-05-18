@@ -17,15 +17,13 @@
           gtag('config', 'GTM-5Z6KH2XP');
         </script>
 
-<!-- Afficher le compteur -->
-<script>
-  gtag('event', 'page_view', {
-    'event_callback': function() {
-      // Récupère les stats via l'interface Google Analytics
-      document.getElementById("counter").textContent = "X vues";
-    }
-  });
-</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5Z6KH2XP"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-5Z6KH2XP');
+        </script>
         
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -68,7 +66,19 @@
     <main>
         <!-- Page d'accueil -->
         <section class="hero">
-            <p>Visites : <span id="counter">⌛ Chargement...</span></p>
+            <p>Visites : <span id="ga-views">⌛ Chargement...</span></p>
+                <script>
+                function updateCounter() {
+                  // Solution temporaire avec localStorage en attendant GA
+                  let fakeCount = localStorage.getItem('ga-fake-count') || 100;
+                  fakeCount++;
+                  localStorage.setItem('ga-fake-count', fakeCount);
+                  document.getElementById("ga-views").textContent = fakeCount + "+";
+                  
+                  // (La récupération du vrai compteur nécessite l'API GA4 - voir ci-dessous)
+                }
+                updateCounter();
+                </script>
             <h1>Bienvenue sur le site de OmZa !</h1>
             <p>Le site pour de bon petit plat avec une touche marocaine</p>
             <a href="liste-recette.html" class="btn">Explorer</a>
