@@ -127,7 +127,7 @@ function displaySearchResults() {
                         ${results.map(recette => `
                             <div class="recette-card">
                                 <div class="recette-photo">
-                                    <img src="images/${recette.title.replace(/\s+/g, '_')}.jpeg" 
+                                    <img src="images/${recette.title.toLowerCase().replace(/\s+/g,'')}.jpeg" 
                                          alt="${recette.title}" 
                                          onerror="this.src='images/logo.jpeg'">
                                 </div>
