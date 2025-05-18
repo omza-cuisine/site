@@ -8,6 +8,25 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5Z6KH2XP');</script>
     <!-- End Google Tag Manager -->
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5Z6KH2XP"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-5Z6KH2XP');
+        </script>
+
+<!-- Afficher le compteur -->
+<script>
+  gtag('event', 'page_view', {
+    'event_callback': function() {
+      // Récupère les stats via l'interface Google Analytics
+      document.getElementById("counter").textContent = "X vues";
+    }
+  });
+</script>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Mon Site de Cuisine</title>
