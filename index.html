@@ -1,30 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5Z6KH2XP');</script>
-    <!-- End Google Tag Manager -->
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5Z6KH2XP"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'GTM-5Z6KH2XP');
-        </script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5Z6KH2XP"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'GTM-5Z6KH2XP');
-        </script>
-        
+<head>     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Mon Site de Cuisine</title>
@@ -32,10 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z6KH2XP"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header>
     <a href="index.html" class="logo">OmZa Cuisine</a>
     <button class="menu-toggle">
@@ -66,19 +38,6 @@
     <main>
         <!-- Page d'accueil -->
         <section class="hero">
-            <p>Visites : <span id="ga-views">⌛ Chargement...</span></p>
-                <script>
-                function updateCounter() {
-                  // Solution temporaire avec localStorage en attendant GA
-                  let fakeCount = localStorage.getItem('ga-fake-count') || 100;
-                  fakeCount++;
-                  localStorage.setItem('ga-fake-count', fakeCount);
-                  document.getElementById("ga-views").textContent = fakeCount + "+";
-                  
-                  // (La récupération du vrai compteur nécessite l'API GA4 - voir ci-dessous)
-                }
-                updateCounter();
-                </script>
             <h1>Bienvenue sur le site de OmZa !</h1>
             <p>Le site pour de bon petit plat avec une touche marocaine</p>
             <a href="liste-recette.html" class="btn">Explorer</a>
