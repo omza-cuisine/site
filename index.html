@@ -13,11 +13,11 @@
       const NAMESPACE = "omza-cuisine";  // Votre identifiant (ex: nom du site)
       const PAGE = "homepage";           // Nom de la page (ex: "recette-tarte")
     
-      fetch(`https://counter.jdev.es/count?namespace=${NAMESPACE}&page=${PAGE}`)
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById("visitor-count").textContent = data.count;
-        })
+        fetch("https://nocors.jrmarques.workers.dev/?url=https://api.countapi.xyz/hit/omza-cuisine/homepage")
+          .then(r => r.json())
+          .then(data => {
+            document.getElementById("counter").textContent = data.value;
+          });
         .catch(error => {
           console.log("Erreur API, utilisation du compteur local...");
           // Fallback avec localStorage
