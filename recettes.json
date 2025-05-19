@@ -51,5 +51,20 @@
             "Maizena",
             "Huile à frire"
         ]
+    },
+    {
+        "title": "Pattes Bolognaise",
+        "category": "Plats",
+        "url": "plats.html#pattesbolognaise",
+        "ingredients": [
+            "1 Ognion",
+            "1 Tomate",
+            "300 gramme de spagetti",
+            "2 petites carotte",
+            "Epices: Sel, Poivre, Herbes de provence, bouillon",
+            "2 cuilleres de concentré de tomate",
+            "1 boite de tomate concassé",
+            "huile d'olive"
+        ]
     }
 ]
