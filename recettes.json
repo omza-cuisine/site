@@ -66,5 +66,19 @@
             "1 boite de tomate concassé",
             "huile d'olive"
         ]
+    },
+    {
+        "title": "Oats Bowl",
+        "category": "Casse Croute",
+        "url": "casse-croute.html#oatsbowl",
+        "ingredients": [
+            "50 gramme d'avoine",
+            "20 cl de lait",
+            "1 Skyr",
+            "1 Banane",
+            "Quelques graine de chia",
+            "Quelques Amande",
+            "Mangue séché (optionel)"
+        ]
     }
 ]
